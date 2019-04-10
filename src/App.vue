@@ -1,7 +1,7 @@
 <template>
   <div id="vdex">
     <page-left />
-    <div class="hinge"></div>
+    <dex-hinge />
     <page-right />
   </div>
 </template>
@@ -9,17 +9,18 @@
 <script>
 import config from '@/vpdex.config'
 import axios from 'axios'
-// import _ from 'lodash'
 
 import PageLeft from '@/components/PageLeft'
 import PageRight from '@/components/PageRight'
+import DexHinge from '@/components/ui/DexHinge'
 
 export default {
   name: 'app',
 
   components: {
     'page-left': PageLeft,
-    'page-right': PageRight
+    'page-right': PageRight,
+    'dex-hinge': DexHinge
   },
 
   created () {
@@ -65,10 +66,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/base.scss';
 
 #vdex {
   display: flex;
-  max-width: 600px;
+  align-items: flex-end;
 }
 
 </style>

@@ -93,16 +93,14 @@ export default {
 
       // return filtered results
       return _.filter(pokelist, list => {
-        // filter based on pokeid
         if (/^\d+$/.test(str)) {
+          // filter based on pokeid
           return _.includes(_.toString(list.id), str)
-        }
-        // filter based on pokename
-        else if (_.isString(str)) {
+        } else if (_.isString(str)) {
+          // filter based on pokename
           return _.includes(list.name.toLowerCase(), str.toLowerCase())
-        }
-        // return full list if nothing filtered
-        else {
+        } else {
+          // return full list if nothing filtered
           return list
         }
       })

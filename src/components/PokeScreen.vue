@@ -8,7 +8,7 @@
 <script>
 import _ from 'lodash'
 
-import Pokeball from '@/components/Pokeball'
+import Pokeball from '@/components/ui/Pokeball'
 import PokeEntry from '@/components/PokeEntry'
 
 export default {
