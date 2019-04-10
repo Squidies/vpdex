@@ -16,4 +16,14 @@
   background: linear-gradient(180deg,rgb(255, 255, 255),rgb(255, 255, 255) 45%,rgb(53, 73, 94) 0,rgb(53, 73, 94) 55%,rgb(65, 184, 131) 0,rgb(65, 184, 131));
   transform: rotate(15deg);
 }
+
+.pokeball::after {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid rgb(53, 73, 94);
+  background: rgb(255, 255, 255);
+  content: "";
+}
 </style>
