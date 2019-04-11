@@ -1,5 +1,5 @@
 <template>
-  <div class="poke-entry">
+  <div class="poke-entry" data-simplebar>
     <div class="pokename">#{{pokeentry.id}} {{ pokeentry.name | capitalize }}</div>
     <div class="sprite"><img :src="pokeentry.sprite" alt=""></div>
     <div class="pokeheight">Height: {{ pokeentry.height }}</div>
@@ -21,6 +21,9 @@
 </template>
 
 <script>
+import 'simplebar'
+import 'simplebar/dist/simplebar.css'
+
 export default {
   computed: {
     pokeentry () {
@@ -29,3 +32,13 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.poke-entry {
+  max-height: 100%;
+  margin: 0 1rem;
+  overflow: auto;
+}
+
+</style>

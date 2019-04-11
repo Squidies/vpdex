@@ -66,7 +66,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~/assets/themes.css';
 
 #vdex {
   display: flex;

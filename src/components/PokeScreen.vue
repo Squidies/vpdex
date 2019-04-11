@@ -24,3 +24,15 @@ export default {
   }
 }
 </script>
+
+<style>
+.poke-screen {
+  width: 300px;
+  height: 150px;
+  border: 3px solid rgb(20, 20, 20);
+  border-radius: 18px;
+  background: rgb(220, 220, 220);
+  margin-bottom: 8px;
+  z-index: 1000;
+}
+</style>
