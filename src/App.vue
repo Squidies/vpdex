@@ -1,5 +1,5 @@
 <template>
-  <div id="vdex">
+  <div id="vdex" class="vdex">
     <page-left />
     <dex-hinge />
     <page-right />
@@ -67,7 +67,7 @@ export default {
 
 <style lang="scss">
 
-#vdex {
+.vdex {
   display: flex;
   align-items: flex-end;
 }

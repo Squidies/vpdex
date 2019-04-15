@@ -1,5 +1,5 @@
 <template>
-  <div class="dex-">
+  <div class="dex-search">
     <ul class="poke-list" ref="pokeList">
       <li
         v-for="(pokemon, index) in pokemonList"
@@ -10,7 +10,6 @@
       </li>
     </ul>
     <input type="text" v-model="searchString">
-    <p>{{ searchString }}</p>
   </div>
 </template>
 
